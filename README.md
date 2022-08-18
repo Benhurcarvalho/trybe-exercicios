@@ -29,11 +29,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_ :white_check_mark:
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_ :white_check_mark:
 - [ ] 3-4: _HTML Semântico_ :white_check_mark:
-- [ ] 3-5: _[Projeto - HTML & CSS]()_
+- [ ] 3-5: _[Projeto - HTML & CSS](https://app.betrybe.com/course/projects/3316)_ :white_check_mark:
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [ ] 4-1: _JavaScript - Primeiros passos_
+- [ ] 4-1: _JavaScript - Primeiros passos_ :white_check_mark:
 - [ ] 4-2: _JavaScript - Array e loop For_
 - [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
