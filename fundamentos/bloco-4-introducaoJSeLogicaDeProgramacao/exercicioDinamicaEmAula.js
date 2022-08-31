@@ -1,9 +1,18 @@
-let frutas = [3, 4, 10, 1, 12];
-let sFrutas = 0
-for (let i = 0; i < frutas.length; i+=1){
-       sFrutas = sFrutas + frutas[i]
-}
-console.log(sFrutas);
+function somaFrutas (frutas){
+
+
+    let sFrutas = 0
+    for (let i = 0; i < frutas.length; i+=1){
+           sFrutas = sFrutas + frutas[i]
+    }
+            if (sFrutas > 15){
+                console.log(sFrutas);
+            } else {
+                console.log("valor menor que 16")
+            }
+    }
+
+console.log(somaFrutas([3, 4, 0, 1, 1]))
 
 
 // // 1 --
