@@ -1,14 +1,47 @@
-function fatorar (n) {
-
-    let fatorial = n;
-    let resultado = fatorial;
-for (let i = 1; i < fatorial; i++) {
-    resultado *= i;
+function calcularFatorialRecursivamente (n) {
+    if (n === 1) {
+        return 1;
     }
-
-console.log(resultado);
+     
+    return n * calcularFatorialRecursivamente (n - 1);
 }
-fatorar(10);
+
+console.log(calcularFatorialRecursivamente(5))
+
+function calcularFatorial (fatorial) {
+
+    if (isNaN(fatorial)) {
+        return 'Não existe fatorial de um texto';
+    }
+     
+    if (!Number.isInteger(fatorial) || fatorial < 0) {
+        return 'Não existe fatorial de um número não natural';
+    }
+     
+    if (fatorial === 0 || fatorial === 1) {
+        return 1;
+    }
+     
+    let resultado = fatorial;
+    let primeiroMultipicador = fatorial - 1;
+    for (let i = primeiroMultipicador; i > 1; i--) {
+        resultado *= i;
+    }
+     
+    return resultado;
+}
+ 
+console.log(calcularFatorial("5"));
+
+function calcularFatorialRecursivamente (n) {
+    if (n === 1) {
+        return 1;
+    }
+     
+    return n * calcularFatorialRecursivamente (n - 1);
+}
+ 
+
 function somaFrutas (frutas){
 
 
