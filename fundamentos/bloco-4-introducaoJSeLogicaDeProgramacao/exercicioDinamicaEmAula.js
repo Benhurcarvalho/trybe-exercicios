@@ -33,13 +33,20 @@ function calcularFatorial (fatorial) {
  
 console.log(calcularFatorial("5"));
 
-function calcularFatorialRecursivamente (n) {
-    if (n === 1) {
-        return 1;
-    }
-     
-    return n * calcularFatorialRecursivamente (n - 1);
+function revertString (str) {
+
+    //Também é possível resolver essa função ultilizando o for, 
+    //eu ecolhi deste modo para amplicar meu repertório nessas pequenas funções intermediárias.
+
+    let splitString = str.split("");
+    let reverseArray = splitString.reverse();
+    let joinArray = reverseArray.join("");
+
+    return joinArray;
+    
 }
+
+console.log(revertString("Trybe"));
  
 
 function somaFrutas (frutas){
