@@ -170,3 +170,5 @@ if (idade > 18){
 let idade2 = 21
 let verificaIdade = idade2 >= 18 ? "A pessoa é maior de idade" : "A pessoa é menor de idade"
 console.log(verificaIdade)
+
+//
