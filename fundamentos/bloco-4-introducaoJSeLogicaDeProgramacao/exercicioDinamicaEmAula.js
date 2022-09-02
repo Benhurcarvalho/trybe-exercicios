@@ -34,15 +34,13 @@ console.log(primeNumbers(50));
 function maiorString (array) {
 
     let maior = []
-
-    for (let i = 0; i < array.length; i++) {
-        // if (array[i] > maior) {
-        //     maior = array[i]
-        // } 
+    for (let i = 0; i < array.length; i += 1) {
         if (array[i].length > maior.length) {
             maior = array[i]
         }
     }
+
+
    return maior; 
 }
 console.log(maiorString(['python','javascript','exemplo','java','html','css']))
@@ -80,7 +78,7 @@ function calcularFatorial (fatorial) {
     return resultado;
 }
  
-console.log(calcularFatorial("5"));
+console.log(calcularFatorial(5));
 
 function revertString (str) {
 
@@ -162,9 +160,9 @@ if (p1 == "pedra" && p2 == "tesoura" || p1 == "tesoura" && p2 == "papel" || p1 =
 
 let idade = 21;
 if (idade > 18){
-    console.log("A pessoa é maior de idade")
+    console.log("A pessoa é maior de idade");
 }else{
-    console.log("A pessoa é menor de idade")
+    console.log("A pessoa é menor de idade");
 }
 // -- Bonus 4 --
 let idade2 = 21
