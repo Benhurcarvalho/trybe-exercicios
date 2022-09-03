@@ -165,3 +165,18 @@ let names = {
   for (let key in names) {
     console.log("Olá " + names[key]+".");
   }
+
+  function operations (a,b) {
+    let addition = a + b;
+    let subtraction = a - b;
+    let multiplication = a * b;
+    let division = a / b;
+    let module = a % b;
+    let result = addition+ "," +subtraction+ "," +multiplication+ "," +division+ ","+module+".";
+    
+return result;
+
+
+  }
+
+  console.log(operations(22,44));
