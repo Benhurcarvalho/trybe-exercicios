@@ -246,6 +246,21 @@ function menorIndex(array) {
 return meI;
 }
 
+
+
 console.log(menorIndex([2, 4, 6, 7, 10, 0, -3]));
 
+
+function maiorString (array) {
+
+  let maior = []
+
+  for (let i = 0; i < array.length; i += 1) {
+      if (array[i].length > maior.length) {
+          maior = array[i]
+      }
+  }
+ return maior;
+}
+console.log(maiorString(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
 
