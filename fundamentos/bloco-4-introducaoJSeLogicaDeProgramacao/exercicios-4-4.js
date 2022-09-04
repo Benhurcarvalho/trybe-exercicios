@@ -234,4 +234,18 @@ return mI;
 
 console.log(maiorIndex([2, 3, 6, 7, 10, 11]));
 
+function menorIndex(array) {
+  
+  let meI = [];
+    for (let index in array) {
+      if (array[index] <= meI){
+        meI=index;
+    }
+  
+}
+return meI;
+}
+
+console.log(menorIndex([2, 4, 6, 7, 10, 0, -3]));
+
 
