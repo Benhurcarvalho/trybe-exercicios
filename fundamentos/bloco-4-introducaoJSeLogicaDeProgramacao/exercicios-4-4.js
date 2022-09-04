@@ -209,3 +209,58 @@ return result;
     recorrente: "Sim"
   };
   
+  // Bloco de Funções
+
+  function verificaPalindrome(s){
+    if ([...s].reverse().join("") === s){
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(verificaPalindrome("arara"));
+
+function maiorIndex(array) {
+  
+  let mI = [];
+    for (let index in array) {
+      if (array[index] >= mI){
+        mI=index;
+    }
+  
+}
+return mI;
+}
+
+console.log(maiorIndex([2, 3, 6, 7, 10, 11]));
+
+function menorIndex(array) {
+  
+  let meI = [];
+    for (let index in array) {
+      if (array[index] <= meI){
+        meI=index;
+    }
+  
+}
+return meI;
+}
+
+
+
+console.log(menorIndex([2, 4, 6, 7, 10, 0, -3]));
+
+
+function maiorString (array) {
+
+  let maior = []
+
+  for (let i = 0; i < array.length; i += 1) {
+      if (array[i].length > maior.length) {
+          maior = array[i]
+      }
+  }
+ return maior;
+}
+console.log(maiorString(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+
