@@ -219,3 +219,19 @@ return result;
     }
 }
 console.log(verificaPalindrome("arara"));
+
+function maiorIndex(array) {
+  
+  let mI = [];
+    for (let index in array) {
+      if (array[index] >= mI){
+        mI=index;
+    }
+  
+}
+return mI;
+}
+
+console.log(maiorIndex([2, 3, 6, 7, 10, 11]));
+
+
