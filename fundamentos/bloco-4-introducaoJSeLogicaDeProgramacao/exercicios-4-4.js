@@ -209,3 +209,13 @@ return result;
     recorrente: "Sim"
   };
   
+  // Bloco de Funções
+
+  function verificaPalindrome(s){
+    if ([...s].reverse().join("") === s){
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(verificaPalindrome("arara"));
