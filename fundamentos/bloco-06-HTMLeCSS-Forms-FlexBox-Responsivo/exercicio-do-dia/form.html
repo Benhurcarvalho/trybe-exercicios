@@ -2,13 +2,13 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8"/>
-    <title>Submeter Palestra</title>
+    <title>TrybeTrip</title>
     <link rel="stylesheet" href="form.css"/>
   </head>
   <body>
     <header class="speaker-form-header">
       <h1>TrybeTrip</h1>
-      <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+      <p><em>Formulário para concorrer a uma viagem!</em></p>
     </header>
 
     <main>
@@ -17,19 +17,27 @@
         <!-- input - full-name -->
         <div class="form-row">
           <div class="line-content">
-            <label for="full-name">Nome completo:</label>
+            <label for="full-name">Nome:</label>
             <input required type="text" name="full-name" id="full-name" placeholder="Digite aqui...">
           </div>
+          <div class="form-row">
+            <div class="line-content">
+              <label for="e-mail">Email :</label>
+              <input required type="email" name="e-mail" id="e-mail" placeholder="Digite aqui...">
+            </div>
         </div>
         <!-- fieldset - type-of-talk   -->
         <div class="line-content">
-          <fieldset class="legacy-form-row">
-            <legend>Tipo de palestra</legend>
-            <input required type="radio" name="talk-type" id="talk-type-1" value="main-stage">
-            <label for="talk-type-1">Palco principal</label>
-            <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
-            <label for="talk-type-2">Workshop</label>
-          </fieldset>
+          
+            <input required type="radio" name="option" id="option-1" value="option-1">
+            <label for="option-1">opção 1</label>
+            <input type="radio" name="option" id="option-2" value="option-2">
+            <label for="option-2">opção 2</label>
+            <input type="radio" name="option" id="option-3" value="option-3">
+            <label for="option-3">opção 3</label>
+            <input type="radio" name="option" id="option-4" value="option-4">
+            <label for="option-4">opção 4</label>
+          
         </div>
 
         <!-- select - t-short-size -->
