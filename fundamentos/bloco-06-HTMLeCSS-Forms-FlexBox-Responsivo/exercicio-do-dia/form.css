@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: rgb(95, 95, 95);
+    background-color: rgba(133, 133, 133, 0.24);
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  
+  .speaker-form-header {
+    text-align: center;
+    background-color: rgb(246, 247, 248);
+    border: 1px solid rgb(214, 217, 220);
+    border-radius: 8px;
+    width: 80%;
+    margin: 40px auto;
+    padding: 50px;
+  }
+  
+  .speaker-form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .speaker-form {
+    background-color: rgb(246, 247, 248);
+    border: 1px solid rgb(214, 217, 220);
+    border-radius: 8px;
+    width: 80%;
+    padding: 50px;
+    margin: 0 auto 40px auto;
+  }
+
+  .fim {
+    flex-direction: row;
+  }
+  
+  .form-row {
+    margin-bottom: 40px;
+  }
+  
+  .form-row input[type="text"],[type="email"] {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(214, 217, 220);
+    border-radius: 3px;
+    width: 50%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 15px;
+  }
+  
+  .legacy-form-row {
+    padding: 10px;
+  }
+  
+  .line-content {
+    margin: 20px;
+    border: 0 none;
+  }  
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px;
+  }
+
+  #tamanho-da-camisa {
+    padding: 1px;
+  }

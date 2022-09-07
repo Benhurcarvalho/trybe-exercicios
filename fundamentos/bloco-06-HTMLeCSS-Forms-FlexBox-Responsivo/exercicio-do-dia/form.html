@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="form.css"/>
+  </head>
+  <body>
+    <header class="speaker-form-header">
+      <h1>TrybeTrip</h1>
+      <p><em>Formulário para concorrer a uma viagem!</em></p>
+    </header>
+
+    <main>
+      
+      <form action="" method="get" class="speaker-form">
+        
+        <div class="form-row">
+          <div class="line-content">
+            <label for="full-name">Nome:</label>
+            <input required type="text" name="full-name" id="full-name" placeholder="Digite aqui...">
+
+          </div>
+          <div class="form-row">
+            <div class="line-content">
+              <label for="e-mail">Email :</label>
+              <input required type="email" name="e-mail" id="e-mail" placeholder="Digite aqui...">
+            </div>
+        </div>
+       
+        <div class="line-content">          
+            <input required type="radio" name="option" id="option-1" value="option-1">
+            <label for="option-1">opção 1</label>
+            <input type="radio" name="option" id="option-2" value="option-2">
+            <label for="option-2">opção 2</label>
+            <input type="radio" name="option" id="option-3" value="option-3">
+            <label for="option-3">opção 3</label>
+            <input type="radio" name="option" id="option-4" value="option-4">
+            <label for="option-4">opção 4</label>          
+        </div>
+
+        <!-- textarea - abstract  -->
+        <div class="line-content">
+         <label for="abstract">Espaço para digitar resposta:</label>
+         <textarea required placeholder="Digite aqui..." name="abstract" id="abstract" ></textarea>
+        </div>
+
+        <!-- checkbox - available -->
+        <div class="line-content">
+          <label for="available">Concordo 1</label>
+          <input type="checkbox" name="is-available" id="available">
+        </div>
+        <div class="line-content">
+          <label for="available2">Concordo 2</label>
+          <input type="checkbox" name="is-available" id="available2">
+        </div>
+
+        <div class="form-row">
+          <div class="line-content">
+            <label for="date">Data :</label>
+            <input required type="date" name="date" id="date">
+          </div>
+        </div>
+
+        <div class="fim">
+          <div class="line-content">
+            <button>Enviar</button>
+          </div> 
+          <div class="line-content">
+            <button>Enviar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html> 
