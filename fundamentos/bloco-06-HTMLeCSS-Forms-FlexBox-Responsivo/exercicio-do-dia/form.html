@@ -12,13 +12,14 @@
     </header>
 
     <main>
-      <!-- form -->
+      
       <form action="" method="get" class="speaker-form">
-        <!-- input - full-name -->
+        
         <div class="form-row">
           <div class="line-content">
             <label for="full-name">Nome:</label>
             <input required type="text" name="full-name" id="full-name" placeholder="Digite aqui...">
+
           </div>
           <div class="form-row">
             <div class="line-content">
@@ -26,9 +27,8 @@
               <input required type="email" name="e-mail" id="e-mail" placeholder="Digite aqui...">
             </div>
         </div>
-        <!-- fieldset - type-of-talk   -->
-        <div class="line-content">
-          
+       
+        <div class="line-content">          
             <input required type="radio" name="option" id="option-1" value="option-1">
             <label for="option-1">opção 1</label>
             <input type="radio" name="option" id="option-2" value="option-2">
@@ -36,39 +36,40 @@
             <input type="radio" name="option" id="option-3" value="option-3">
             <label for="option-3">opção 3</label>
             <input type="radio" name="option" id="option-4" value="option-4">
-            <label for="option-4">opção 4</label>
-          
-        </div>
-
-        <!-- select - t-short-size -->
-        <div class="line-content">
-          <label for="tamanho-da-camisa">Tamanho da camisa:</label>
-          <select name="tamanho-da-camisa" id="tamanho-da-camisa">
-            <option value="p">Pequeno</option>
-            <option value="m">Médio</option>
-            <option value="g">Grande</option>
-          </select>
+            <label for="option-4">opção 4</label>          
         </div>
 
         <!-- textarea - abstract  -->
         <div class="line-content">
-         <label for="abstract">Resumo da palestra:</label>
-         <textarea required placeholder="Explique o conteúdo da sua palestra" name="abstract" id="abstract" ></textarea>
+         <label for="abstract">Espaço para digitar resposta:</label>
+         <textarea required placeholder="Digite aqui..." name="abstract" id="abstract" ></textarea>
         </div>
 
         <!-- checkbox - available -->
         <div class="line-content">
-          <input required type="checkbox" name="is-available" id="available">
-          <label for="available"> Confirmo que estou disponível na data do evento</label>
+          <label for="available">Concordo 1</label>
+          <input type="checkbox" name="is-available" id="available">
         </div>
-
-        <!-- button - submit -->
         <div class="line-content">
-          <button>Enviar</button>
-          
+          <label for="available2">Concordo 2</label>
+          <input type="checkbox" name="is-available" id="available2">
         </div>
-        
 
+        <div class="form-row">
+          <div class="line-content">
+            <label for="date">Data :</label>
+            <input required type="date" name="date" id="date">
+          </div>
+        </div>
+
+        <div class="fim">
+          <div class="line-content">
+            <button>Enviar</button>
+          </div> 
+          <div class="line-content">
+            <button>Enviar</button>
+          </div>
+        </div>
       </form>
     </main>
   </body>
