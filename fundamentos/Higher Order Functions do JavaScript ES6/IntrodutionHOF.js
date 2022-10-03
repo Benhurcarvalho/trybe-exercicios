@@ -13,6 +13,7 @@ const newEmployees = (listaDeNomes) => {
     // for (let i = 0; i < listaDeNomes.length; i+= 1) {
     //     employees.push(listaDeNomes[i], geraEmail(listaDeNomes[i]))
     // }
+    
     for (let i = 0, j = listaDeNomes.length; i < j; i++){
         employees[listaDeNomes[i]] = geraEmail(listaDeNomes[i]);
     }
