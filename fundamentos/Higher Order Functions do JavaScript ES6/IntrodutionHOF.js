@@ -1,8 +1,10 @@
-const listaDeNomes = ['Pedro Guerra', 'Luiza Drumond', 'Carla Paiva'];
+const listaDeNomes = ['Pedro Guerra', 'Luiza Drumond', 'Carla Paiva', 'Ben-Hur Carvalho'];
 
-const geraEmail = (nome) => `${nome.replace(' ', '_').toLowerCase()}@trybe.com`;
+const geraEmailPonto = (nome) => `${nome.replace(' ', '.').toLowerCase()}@trybe.com`;
 
-const newEmployees = (listaDeNomes) => {
+const geraEmailLine = (nome) => `${nome.replace(' ', '_').toLowerCase()}@trybe.com`;
+
+const newEmployees = (listaDeNomes, callback) => {
 
     const employees = {};
     // const employees = {
@@ -13,13 +15,14 @@ const newEmployees = (listaDeNomes) => {
     // for (let i = 0; i < listaDeNomes.length; i+= 1) {
     //     employees.push(listaDeNomes[i], geraEmail(listaDeNomes[i]))
     // }
-    
+
     for (let i = 0, j = listaDeNomes.length; i < j; i++){
-        employees[listaDeNomes[i]] = geraEmail(listaDeNomes[i]);
+        employees[listaDeNomes[i]] = callback(listaDeNomes[i]);
     }
     return employees;
   };
 
 //   nome_da_pessoa@trybe.com
 
-console.log(newEmployees(listaDeNomes));
+console.log(newEmployees(listaDeNomes, geraEmailPonto));
+console.log(newEmployees(listaDeNomes, geraEmailLine));
