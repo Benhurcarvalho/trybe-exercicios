@@ -24,5 +24,20 @@ const newEmployees = (listaDeNomes, callback) => {
 
 //   nome_da_pessoa@trybe.com
 
-console.log(newEmployees(listaDeNomes, geraEmailPonto));
-console.log(newEmployees(listaDeNomes, geraEmailLine));
+// console.log(newEmployees(listaDeNomes, geraEmailPonto));
+// console.log(newEmployees(listaDeNomes, geraEmailLine));
+
+const PrizeDraw = () => Math.round(Math.random()*5);
+
+// console.log(PrizeDraw())
+
+const lotteryWinner = (num, callback) => {
+    // return `${num} ${callback()}`
+    return num == callback() ? 'Parabéns você ganhou' : 'Tente novamente';
+    // if (num === callback()) {
+    //     return 'Parabéns você ganhou'
+    // } {
+    //     return 'Tente novamente'
+    // }
+}
+console.log(lotteryWinner(4, PrizeDraw));
