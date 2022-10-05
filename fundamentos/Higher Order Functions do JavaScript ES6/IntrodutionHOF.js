@@ -40,4 +40,18 @@ const lotteryWinner = (num, callback) => {
     //     return 'Tente novamente'
     // }
 }
-console.log(lotteryWinner(4, PrizeDraw));
+// console.log(lotteryWinner(4, PrizeDraw));
+
+// const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+// const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+
+
+// const examAutoCorrector = (arr1, arr2) => {
+
+//     let finalScore = 0;
+  
+//     return finalScore;
+// }
+
+// console.log(examAutoCorrector(RIGHT_ANSWERS, STUDENT_ANSWERS))
