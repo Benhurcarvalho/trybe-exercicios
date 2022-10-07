@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "Este repositório conta com todas as atividades de aprendizagem desenvolvidas por _[Ben-Hur](https://www.linkedin.com/in/ben-hur-carvalho-318a02201/)_ enquanto estuda na [Trybe](https://www.betrybe.com/) :rocket:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benhurcarvalho/trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benhurcarvalho/trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/Benhurcarvalho/trybe-exercicios#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}
