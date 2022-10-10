@@ -76,6 +76,14 @@ const estudantes = [
   const allNameStudents = estudantes.filter((estudante) => (
     estudante.turno === 'Manhã')).map((estudante) => `${estudante.nome} ${estudante.sobrenome}`);
   
-  console.log(allNameStudents);
+//   console.log(allNameStudents);
   
-  
+const reportStatus = (name, students) => {
+  const studentInfo = students.find((student) => student.nome === name);
+  return studentInfo.materias.map((materia) => (
+    `${materia.name} ${(materia.nota >= 60) ? 'Aprovado' : 'Reprovado'}`
+  ));
+};
+
+console.log(reportStatus('Natalia', estudantes));
+
