@@ -87,3 +87,4 @@ const reportStatus = (name, students) => {
 
 console.log(reportStatus('Natalia', estudantes));
 
+
