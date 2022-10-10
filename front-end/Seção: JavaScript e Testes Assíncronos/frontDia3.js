@@ -78,6 +78,11 @@ const estudantes = [
   
 //   console.log(allNameStudents);
   
+const reportStudent = (name, students) => {
+  return students.find((student) => student.nome === name);
+};
+
+
 const reportStatus = (name, students) => {
   const studentInfo = students.find((student) => student.nome === name);
   return studentInfo.materias.map((materia) => (
@@ -86,5 +91,9 @@ const reportStatus = (name, students) => {
 };
 
 console.log(reportStatus('Natalia', estudantes));
+console.log(reportStudent('Natalia', estudantes));
+
+console.log(reportStatus('Jorge', estudantes));
+console.log(reportStudent('Jorge', estudantes));
 
 
