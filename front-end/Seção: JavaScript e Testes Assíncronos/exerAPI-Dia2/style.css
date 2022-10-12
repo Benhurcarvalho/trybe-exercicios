@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#json {
+    border: solid 2px red;
+}
+
+#corpo {
+    border: solid 2px blue;
+}
+
+#art1 {
+    border: solid 2px blueviolet;
+}
+
+#art2 {
+    border: solid 2px darkgreen;
+}
+
+#art3 {
+    border: solid 2px gold;
+}
