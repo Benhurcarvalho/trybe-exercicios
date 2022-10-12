@@ -17,10 +17,9 @@ const fetchCep2 = (cep) => {
 
   fetch(url)
   .then((response) => response.json())
-  .then((object) => {
-    const {localidade} = object;
-    console.log(localidade);
-  });
+  .then((object) => console.log(object.localidade));
+    // const {localidade} = object;
+    // console.log(localidade);
 }
 
 fetchCep2('31995170');
