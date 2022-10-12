@@ -26,7 +26,7 @@ fetchCep2('31995170');
 
 
 const fetchCep3 = async (cep) => {
-  const url = `https://viacep.com.br/ws/${cep}/json/`;
+  const url = `https://vacep.com.br/ws/${cep}/json/`;
 
   const result = await fetch(url)
     .then((response) => response.json())
