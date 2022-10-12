@@ -26,12 +26,12 @@ fetchCep2('31995170');
 
 
 const fetchCep3 = async (cep) => {
-  const url = `https://vacep.com.br/ws/${cep}/json/`;
+  const url = `https://viacep.com.br/ws/${cep}/json/`;
 
   const result = await fetch(url)
     .then((response) => response.json())
     .then((object) => console.log(`${object.localidade} | ${object.uf}`))
-    .catch((error) => console.log(`Algo deu errado - ${error}`));
+    .catch((error) => console.log(`Algo deu errado - verifique se o CEP foi digitado corretamente!`));
 }
 
-fetchCep3('31995170');
+fetchCep3('31995s170');
