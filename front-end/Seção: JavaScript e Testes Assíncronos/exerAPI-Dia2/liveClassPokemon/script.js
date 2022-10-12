@@ -39,12 +39,12 @@ function append(pokemon) {
       .catch(() => console.log('deu erro'))
   }
   
-  const fetchPokemonList = () => {
-    fetchPokemon('pikachu');
-    fetchPokemon('ditto');
-    fetchPokemon('squirtle');
-    fetchPokemon('bulbasaur');
-  }
+//   const fetchPokemonList = () => {
+//     fetchPokemon('PiKACHU');
+//     fetchPokemon('ditto');
+//     fetchPokemon('squirtle');
+//     fetchPokemon('bulbasaur');
+//   }
   
   // async function fetchPokemonAsync()
   const fetchPokemonAsync = async (pokemonName) => {
@@ -59,7 +59,9 @@ function append(pokemon) {
     } catch (error) {
       console.log(error);
       return {
-        name: 'error',
+        name: `Ops! Não encontrei o pokemon
+        verifique a sua conexão com a internet 
+        e tente novamente.`,
         imageUrl: ''
       };
     }
