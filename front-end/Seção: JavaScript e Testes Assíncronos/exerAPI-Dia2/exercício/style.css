@@ -1,3 +1,7 @@
-.card {
-    width: 18rem;
-  }
+#piadaAleatoria {
+  background-color: aqua;
+};
+
+p {
+  border: 1px solid red;
+}
