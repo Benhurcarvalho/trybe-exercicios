@@ -41,3 +41,12 @@ fetchJoke().then((data) => {
   jokeDom.innerText = data
   document.getElementById('piadaAleatoria').appendChild(jokeDom);
   });
+
+  const proList = async () => {
+    const itens = await fetchProducts('computador');
+    const { results } = itens;
+    const capItems = document.querySelector('.items');
+    results.forEach((element) => capItems.appendChild(createProductItemElement(element)));
+  };
+  
+  proList();
