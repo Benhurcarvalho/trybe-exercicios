@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="xablau">
       Hello
-      <Irado />
+      <Irado  xablau={ "Olá povo Irado" }/>
     </div>
   );
 }
