@@ -1,12 +1,9 @@
-import Irado from "./componets/Irado";
+import PasswordInput from './componets/PasswordInput';
 import './App.css';
 
 function App() {
   return (
-    <div className="xablau">
-      Hello
-      <Irado  xablau={ "Olá povo Irado" }/>
-    </div>
+      <PasswordInput />
   );
 }
 
