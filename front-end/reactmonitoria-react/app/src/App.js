@@ -1,9 +1,11 @@
-
+import Irado from "./componets/Irado";
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="xablau">
       Hello
+      <Irado />
     </div>
   );
 }
