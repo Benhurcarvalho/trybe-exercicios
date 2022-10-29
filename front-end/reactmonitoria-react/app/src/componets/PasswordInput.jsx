@@ -29,15 +29,10 @@ constructor() {
 
     render() {
         return (
-            <div>
-            <p>
-                Teste
-            </p>
             <label htmlFor="password"> Senha:
                 <input type={ this.state.inputType } id= 'password' name='password'/>
-            </label>
-            <button  onClick={this.handleShowPasswrd}>{ this.state.btn }</button>
-            </div>
+                <button  onClick={this.handleShowPasswrd}>{ this.state.btn }</button>
+            </label>   
         )
     }
 }
