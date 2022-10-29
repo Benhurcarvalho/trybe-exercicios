@@ -1,4 +1,4 @@
-const color = [
+const allColors = [
     {
         color: 'red',
         value: '#f00'
@@ -29,4 +29,4 @@ const color = [
     }
 ];
 
-export default color;
+export default allColors;

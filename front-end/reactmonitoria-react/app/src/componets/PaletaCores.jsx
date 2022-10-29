@@ -1,5 +1,6 @@
 import React from "react";
-import color from "../data";
+import allColors from "../data";
+import ColorCard from "./ColorCard";
 
 
 class PaletaCores extends React.Component {
@@ -22,7 +23,7 @@ constructor() {
 
     render() {
 
-        const filterColors = color.filter((colorItem) => {
+        const filterColors = allColors.filter((colorItem) => {
             const { color } = colorItem;
             return color.includes(this.state.searchText);
         })
@@ -38,6 +39,14 @@ constructor() {
                 <ul>
                     { filterColors.map((colorItem, index) => {
                         return <li key={ (colorItem, index) }>{ colorItem.color }</li>
+                    })}
+                    {/* { filterColors.map((colorItem) => {
+                        return <ColorCard color={ colorItem.color } value={ colorItem.value } />
+                    })} */}    
+                </ul>
+                <ul>
+                    { filterColors.map((colorItem) => {
+                        return <ColorCard value={ colorItem.value } />
                     })}
                 </ul>
             </section>

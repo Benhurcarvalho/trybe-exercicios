@@ -1,11 +1,11 @@
 import PasswordInput from './componets/PasswordInput';
-import './App.css';
 import PaletaCores from './componets/PaletaCores';
+import './App.css';
 
 function App() {
   return (
     <>
-    <main className='xablau'>
+    <main>
       <PaletaCores />
       <PasswordInput />
     </main>
