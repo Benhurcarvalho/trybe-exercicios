@@ -1,6 +1,7 @@
 // import PasswordInput from './componets/PasswordInput';
 // import PaletaCores from './componets/PaletaCores';
 import logo from './trybe_logo.svg';
+import LoginForm from './componets/LoginForm';
 import './App.css';
 
 function App() {
@@ -10,9 +11,10 @@ function App() {
         <img src={ logo } alt='logo da trybe' />
       </header>
     <main className='app'>
-      {/* <PaletaCores /> */}
-      {/* <PasswordInput /> */}
+      <LoginForm />
     </main>
+    {/* <PaletaCores /> */}
+    {/* <PasswordInput /> */}
     </div>
   );
 }
