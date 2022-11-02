@@ -169,3 +169,14 @@ console.log(verificaIdade)
 // -- Bonus 4 --
 let idade2 = 21
 let verificaIdade = idade2 >= 18 ? "A pessoa é maior de idade" : "A pessoa é menor de idade"
+
+function multiploDeA (a, N) {
+    let soma = 0
+    for (let i = 1; i <= N; i++) {
+        if (i % a === 0) {
+             soma = soma + i
+        }
+    }
+    return soma
+}
+multiploDeA (3, 18);
