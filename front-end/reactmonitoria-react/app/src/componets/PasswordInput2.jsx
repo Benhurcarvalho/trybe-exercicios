@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 class PasswordInput2 extends Component {
   render() {
-    const { password, handleChange } = this.props;
+    const { password, handleChange, inputType } = this.props;
     return (
         <label>
         Senha:
         <input
-          type='password'
+          type={ inputType }
           name='password'
           placeholder="Digite seua senha"
           value={ password }

@@ -9,9 +9,22 @@ class LoginForm extends React.Component {
         email: '',
         password: '',
         isButtonDisabled: true,
-        emailIsLogged: []
+        emailIsLogged: [],
+        btn: 'Mostrar',
+        inputType: 'password'
     }
+    
+    handleShowPasswrd(ev) {
+        ev.preventDefault();
+        console.log("chamou");
 
+        if (this.state.inputType ===  'password') {
+            this.setState({ inputType: 'text' }, this.setState({ btn: 'Esconder' }))
+        }
+        else {
+            this.setState({ inputType: 'password' }, this.setState({ btn: 'Mostrar' }))
+        }
+    }
     handleChange = (ev) => {
         const { target } = ev;
         this.setState({ [target.name]: target.value }, () => {
@@ -25,10 +38,9 @@ class LoginForm extends React.Component {
             });
         })
     }
-
+    
     handleSubmit = (ev) => {
         ev.preventDefault();
-        alert("Login feito com sucesso!!");
         this.setState((prevState) => {
             return {
                 email: '',
@@ -36,10 +48,12 @@ class LoginForm extends React.Component {
                 emailIsLogged: [...prevState.emailIsLogged, this.state.email]
             }
         })
+        // alert("Login feito com sucesso!!");
     }
-
+    
+    
     render() {
-        const { email, password, isButtonDisabled } = this.state;
+        const { email, password, isButtonDisabled, inputType } = this.state;
         return (
             <section>
                 <form onSubmit={ this.handleSubmit }>
@@ -50,10 +64,12 @@ class LoginForm extends React.Component {
                       handleChange={ this.handleChange }
                     />
                     <PasswordInput2 
+                      inputType= { inputType }
                       password={ password }
                       handleChange={ this.handleChange }
                     />
                     {/* <PasswordInput /> */}
+                    <button onClick={ this.handleShowPasswrd }>{ this.state.btn }</button>
                     <button disabled={ isButtonDisabled }>Fazer Login</button>
                 </form>
             </section>
