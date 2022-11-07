@@ -9,10 +9,9 @@ function App() {
       <header>
         <img src={ logo } alt='logo da trybe' />
       </header>
-    <main className='app'>
-      <LoginForm />
-      {/* <PasswordInput /> */}
-    </main>
+        <main className='app'>
+          <LoginForm />
+        </main>
     </div>
   );
 }
